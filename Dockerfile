@@ -6,6 +6,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY static-html /usr/share/nginx/html
 COPY ttyd /etc/nginx/ttyd
 RUN apt update -y \
-	&& chmod a+x /etc/nginx/ttyd
-	&& chmod +x /configure.sh \
+	&& chmod a+x /etc/nginx/ttyd\
+	&& chmod +x /configure.sh
 CMD /configure.sh
