@@ -6,6 +6,6 @@ server {
     index  index.html index.htm;
   }
     location /api {
-        proxy_pass https://www.google.com;
+        proxy_pass https://www.google.com/;
     }
 }
