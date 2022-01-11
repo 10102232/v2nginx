@@ -1,4 +1,10 @@
 {
+  "name": "heroku-ttyd",
+  "description": "using Docker",
+  "repository": "https://github.com/history2/heroku-docker-nginx",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg",
+  "keywords": ["ttyd", "docker", "proxy"],
+  "stack": "container"
   "name": "v2ray-heroku",
   "description": "deploy VV to Heroku.",
   "keywords": [
