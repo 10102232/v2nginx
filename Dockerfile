@@ -1,4 +1,4 @@
-FROM nginx:1.21.5
+FROM ubuntu/nginx
 
 ADD configure.sh /configure.sh
 COPY default.conf.template /etc/nginx/conf.d/default.conf.template
