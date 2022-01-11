@@ -6,6 +6,6 @@ server {
     index  index.html index.htm;
   }
     location /112233/ {
-        proxy_pass https://www.github.com/;
+        proxy_pass https://www.google.com/;
     }
 }
