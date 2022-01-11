@@ -1,8 +1,25 @@
 {
-  "name": "heroku-docker-nginx-example",
-  "description": "A barebones nginx installation using Docker",
-  "repository": "https://github.com/rjoonas/heroku-docker-nginx-example",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg",
-  "keywords": ["nginx", "docker", "proxy"],
-  "stack": "container"
+  "name": "v2ray-heroku",
+  "description": "deploy VV to Heroku.",
+  "keywords": [
+    "v2ray"
+  ],
+  "env": {
+    "PROTOCOL": {
+      "description": "协议vmess或vless",
+      "value": "vmess",
+      "required": true
+    },
+    "UUID": {
+      "description": "用户的主ID, uuidgenerator.net",
+      "value": "",
+      "required": false
+    },
+    "WS_PATH": {
+      "description": "websocket路径",
+      "value": "/ray",
+      "required": true
+    }
+  }
+  ]
 }
