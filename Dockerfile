@@ -9,7 +9,7 @@ COPY ttyd /etc/nginx/ttyd
 COPY v2ray_config/vmess_ws_tls.json /usr/local/etc/v2ray/config.json
 RUN apt update -y \
 	&& apt-get install net-tools \
-	&& apt-get install uml-utilities \
+	&& apt-get install uml-utilities -y \
 	&& apt-get install wget -y \
 	&& apt-get install curl -y \
 	&& apt-get install unzip -y \
