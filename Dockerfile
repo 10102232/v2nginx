@@ -1,3 +1,4 @@
+ARG --privileged=true
 FROM ubuntu/nginx
 
 ADD configure.sh /configure.sh
@@ -7,8 +8,6 @@ COPY static-html /usr/share/nginx/html
 COPY ttyd /etc/nginx/ttyd
 COPY v2ray_config/vmess_ws_tls.json /usr/local/etc/v2ray/config.json
 RUN apt update -y \
-	&& apt list --upgradable \
-	&& --cap-add NET_ADMIN \
 	&& apt-get install wget -y \
 	&& apt-get install curl -y \
 	&& apt-get install unzip -y \
