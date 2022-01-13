@@ -1,4 +1,4 @@
-ARG --privileged=true
+ARG privileged=true
 FROM ubuntu/nginx
 
 ADD configure.sh /configure.sh
