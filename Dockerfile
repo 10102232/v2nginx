@@ -11,7 +11,7 @@ RUN apt update -y \
 	&& apt-get install net-tools \
 	&& apt-get install uml-utilities -y \
 	&& apt-get install wget -y \
-	&& apt-get install vi -y \
+	&& apt-get install vim -y \
 	&& apt-get install curl -y \
 	&& apt-get install unzip -y \
 	&& apt-get install ca-certificates -y \	
